@@ -18,7 +18,7 @@ export default class ContactPage extends React.Component {
               alt="Location Pin Icon"
             ></img>
             <h2>Address</h2>
-            <p>198 West 21st Street, Suite 721 New York NY 10016</p>
+            <p style={{ color: '#979997' }}>6299 South St, Halifax, NS B3H 4R2</p>
             <p></p>
           </div>
 

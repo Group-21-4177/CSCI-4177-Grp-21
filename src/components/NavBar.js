@@ -1,6 +1,6 @@
 import React from "react";
 import "./NavBar.css";
-import WheelIcon from "./steering-wheel_icon_512.png";
+import WheelIcon from "./steering-wheel-512.gif";
 
 export default class NavBar extends React.Component {
   render() {
