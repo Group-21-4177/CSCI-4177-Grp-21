@@ -11,9 +11,9 @@ export default class NavBar extends React.Component {
         </div>
         <div className="menu-options">
           <ul>
-            <li>Home</li>
-            <li>FAQ</li>
-            <li>Contact Us</li>
+            <a href="/"><li>Home</li></a>
+            <a href="faq"><li>FAQ</li></a>
+            <a href="contact"><li>Contact Us</li></a>
           </ul>
         </div>
       </nav>
