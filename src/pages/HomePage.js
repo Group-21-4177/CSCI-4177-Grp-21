@@ -1,10 +1,14 @@
 import React from "react";
 import "./css/HomePage.css";
 import carWashImage2 from "./images/carwash2-unsplash.jpg";
+import {Helmet} from 'react-helmet';
 
 export default function HomePage() {
     return (
         <div className="home-page">
+            <Helmet>
+                <style>{'body { background-color: #F2F2F2; }'}</style>
+            </Helmet>
             <div className="home-grid">
                 <div className="home-container">
                     <h1>AutoCare</h1>
