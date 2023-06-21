@@ -7,7 +7,7 @@ export default function HomePage() {
     return (
         <div className="home-page">
             <Helmet>
-                <style>{'body { background-color: #F2F2F2; }'}</style>
+                <style>{'body { background-color: #F5F5F5; }'}</style>
             </Helmet>
             <div className="home-grid">
                 <div className="home-container">

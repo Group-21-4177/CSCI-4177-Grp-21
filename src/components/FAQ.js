@@ -6,7 +6,7 @@ function FAQ() {
     return (
         <div className='container'>
             <Helmet>
-                <style>{'body { background-color: #F2F2F2; }'}</style>
+                <style>{'body { background-color: #F5F5F5; }'}</style>
             </Helmet>
             <h1>Frequently Asked Questions</h1>
             <p>Below you'll find answers to some of the most common questions we get asked. If you can't find what you're looking for, just send us a message!</p>
