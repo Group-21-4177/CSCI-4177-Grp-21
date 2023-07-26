@@ -5,39 +5,39 @@ import "./css/RegistrationPage/RegistrationPage.css";
 import signUpImage from "./images/signup-image.png";
 
 const RegistrationPage = () => {
-    const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
-        password: '',
-    });
+    // const [formData, setFormData] = useState({
+    //     firstName: '',
+    //     lastName: '',
+    //     email: '',
+    //     password: '',
+    // });
 
-    const handleUserInput = (event) => {
-        const { name, value} = event.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
-    };
+    // const handleUserInput = (event) => {
+    //     const { name, value} = event.target;
+    //     setFormData({
+    //         ...formData,
+    //         [name]: value,
+    //     });
+    // };
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    // const handleSubmit = (event) => {
+    //     event.preventDefault();
 
-        // Form validation
-        //Ensure all fields are filled out
-        if (!formData.firstName || !formData.lastName || !formData.email || !formData.password) {
-            alert('Please fill in all fields.');
-            return;
-        }
+    //     // Form validation
+    //     //Ensure all fields are filled out
+    //     if (!formData.firstName || !formData.lastName || !formData.email || !formData.password) {
+    //         alert('Please fill in all fields.');
+    //         return;
+    //     }
 
-        // Ensure email is in proper format
+    //     // Ensure email is in proper format
 
-        // Ensure password is in proper format
+    //     // Ensure password is in proper format
 
-        // Ensure names are in proper format
+    //     // Ensure names are in proper format
 
 
-    };
+    // };
 
     return(
         <body>

@@ -5,8 +5,8 @@ import "./css/RegistrationPage/RegistrationPage.css";
 import logInImage from "./images/login-image.png";
 
 const LoginPage = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    // const [email, setEmail] = useState('');
+    // const [password, setPassword] = useState('');
 
     return (
         <section class="sign-in">
