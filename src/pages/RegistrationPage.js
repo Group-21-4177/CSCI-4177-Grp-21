@@ -5,7 +5,6 @@ import "./css/RegistrationPage/RegistrationPage.css";
 import signUpImage from "./images/signup-image.png";
 
 const RegistrationPage = () => {
-    
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
