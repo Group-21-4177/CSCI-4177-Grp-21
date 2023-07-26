@@ -1,20 +1,19 @@
 // Yara Ahmed (B00830192) is the author of this page
 
-// import React, { useState } from "react";
-import React from "react";
+import React, { useState } from "react";
 import "./css/RegistrationPage/RegistrationPage.css";
 import logInImage from "./images/login-image.png";
 
 const LoginPage = () => {
-    // const [email, setEmail] = useState('');
-    // const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
     return (
         <section class="sign-in">
             <div class="container">
                 <div class="signin-content">
                     <div class="signin-image">
-                        <figure><img src={logInImage}/></figure>
+                        <figure><img src={logInImage} alt="blue-vintage-car"/></figure>
                         <a href="/register" class="signup-image-link">Create an account</a>
                     </div>
 
