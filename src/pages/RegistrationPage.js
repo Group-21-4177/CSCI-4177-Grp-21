@@ -1,3 +1,5 @@
+// Yara Ahmed (B00830192) is the author of this page
+
 import React, { useState } from "react";
 import "./css/RegistrationPage/RegistrationPage.css";
 import signUpImage from "./images/signup-image.png";
