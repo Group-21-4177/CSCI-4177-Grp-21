@@ -21,7 +21,7 @@ export default function HomePage() {
                         prime condition with AutoCare.
                     </p>
                     <div className="button-container">
-                        <button className="join-button">Join Today</button>
+                        <a href="/register"><button className="join-button">Join Today</button></a>
                     </div>
                     <div className="home-page-image">
                         <img
