@@ -4,6 +4,7 @@ import FAQ from "./components/FAQ";
 import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import NavBar from "./components/NavBar";
+import VendorReview from "./pages/VendorReview";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
 
           <Route path="/contact" element={<ContactPage />} />
+
+          <Route path="/review" element={<VendorReview />} />
+
           <Route path="/" element={<HomePage />} />
         </Routes>
       </Router>
