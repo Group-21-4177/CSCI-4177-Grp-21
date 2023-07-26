@@ -5,6 +5,7 @@ import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import NavBar from "./components/NavBar";
 import VendorReview from "./pages/VendorReview";
+import RegistrationPage from "./pages/RegistrationPage";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
           <Route path="/review" element={<VendorReview />} />
 
           <Route path="/" element={<HomePage />} />
+
+          <Route path="/register" element={<RegistrationPage/>} />
         </Routes>
       </Router>
     </div>
