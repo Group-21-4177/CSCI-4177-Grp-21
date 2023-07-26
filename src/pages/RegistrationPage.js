@@ -1,6 +1,7 @@
 // Yara Ahmed (B00830192) is the author of this page
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import React from "react";
 import "./css/RegistrationPage/RegistrationPage.css";
 import signUpImage from "./images/signup-image.png";
 
@@ -70,7 +71,7 @@ const RegistrationPage = () => {
                                 </form>
                             </div>
                             <div class="signup-image">
-                                <figure><img src={signUpImage} alt="sign up image"/></figure>
+                                <figure><img src={signUpImage}/></figure>
                                 <a href="/login" class="signup-image-link">I am already a member</a>
                             </div>
                         </div>
