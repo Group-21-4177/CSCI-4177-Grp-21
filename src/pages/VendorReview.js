@@ -31,7 +31,7 @@ function VendorReview() {
       description: reviewDescription,
     };
     axios
-      .post("https://csci-4177-grp-21.onrender.com/addReview", newReview)
+      .post("http://localhost:5008/addReview", newReview)
       .then((response) => {
         console.log(response.data);
       })

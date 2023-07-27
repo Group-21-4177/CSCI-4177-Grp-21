@@ -1,11 +1,9 @@
 const express = require('express');
 const cors = require('cors');
-const bodyParser = require('body-parser');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(bodyParser.json());
 
 const mysql = require('mysql');
 const conn = mysql.createConnection({
@@ -22,7 +20,7 @@ if (err) throw err;
 });
 module.exports = conn;
 
-const port = process.env.PORT || 5010;
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
@@ -54,43 +52,6 @@ app.post('/userUpdate', (req, res) => {
     }
     else {
       res.send('User updated');
-    }
-  })
-});
-
-// API Endpoints for Vendor Review Table
-
-app.get('/review', (req, res) => {
-  const vendor_id = req.query.id;
-  const sql = 'SELECT * FROM vendors_review WHERE vendor_id = ?';
-  conn.query(sql, [vendor_id], (err, result) => {
-      if(err) { 
-        throw err;
-      }
-      else if (result.length === 0) {
-        res.status(404).send('vendor not found');
-      }
-      else {
-        const reviews = result.map(item => ({
-          rating: item.rating,
-          heading: item.heading,
-          description: item.description
-        }));
-        res.json(reviews);
-      }
-    });
-});
-
-app.post('/addReview', (req, res) => {
-  console.log(req.body);
-  const sql = 'INSERT INTO vendors_review (vendor_id, rating, heading, description) VALUES (?, ?, ?, ?)';
-  const { vendor_id, rating, heading, description } = req.body;
-  conn.query(sql, [vendor_id, rating, heading, description], (err) => {
-    if(err) {
-      throw err;
-    }
-    else {
-      res.send('review added');
     }
   })
 });
