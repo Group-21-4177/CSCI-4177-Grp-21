@@ -8,6 +8,7 @@ function VendorReview() {
   const [ratingValue, setRatingValue] = useState(3);
   const [reviewHeading, setReviewHeading] = useState("");
   const [reviewDescription, setReviewDescription] = useState("");
+  // TODO: get current vendor id, once the vendor page is implemented
   const vendorId = 3;
 
   const handleHeadingChange = (event) => {
