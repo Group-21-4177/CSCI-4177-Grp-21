@@ -2,11 +2,13 @@ import carWashImage1 from "./images/carwash1-unsplash.jpeg";
 import "./css/VendorReview.css";
 import Rating from "@mui/material/Rating";
 import React, { useState } from "react";
+import axios from "axios";
 
 function VendorReview() {
   const [ratingValue, setRatingValue] = useState(3);
   const [reviewHeading, setReviewHeading] = useState("");
   const [reviewDescription, setReviewDescription] = useState("");
+  const vendorId = 3;
 
   const handleHeadingChange = (event) => {
     setReviewHeading(event.target.value);
@@ -17,11 +19,24 @@ function VendorReview() {
   };
 
   const handleSubmit = (event) => {
-    // TODO: update once review API is ready
-    event.preventDefault();
     console.log("Heading:", reviewHeading);
     console.log("Description:", reviewDescription);
     console.log("Rating:", ratingValue);
+
+    const newReview = {
+      vendor_id: vendorId,
+      rating: ratingValue,
+      heading: reviewHeading,
+      description: reviewDescription,
+    };
+    axios
+      .post("http://localhost:5008/addReview", newReview)
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (
