@@ -3,6 +3,7 @@ import "./css/VendorReview.css";
 import Rating from "@mui/material/Rating";
 import React, { useState } from "react";
 import axios from "axios";
+import AllVendorReview from "../components/AllVendorReview";
 
 function VendorReview() {
   const [ratingValue, setRatingValue] = useState(3);
@@ -95,6 +96,8 @@ function VendorReview() {
           ></img>
         </div>
       </div>
+
+      <AllVendorReview></AllVendorReview>
     </div>
   );
 }
