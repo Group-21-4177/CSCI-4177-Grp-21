@@ -10,7 +10,7 @@ function VendorReview() {
   const [reviewHeading, setReviewHeading] = useState("");
   const [reviewDescription, setReviewDescription] = useState("");
   // TODO: get current vendor id, once the vendor page is implemented
-  const vendorId = 3;
+  const vendorId = 1;
 
   const handleHeadingChange = (event) => {
     setReviewHeading(event.target.value);
@@ -35,9 +35,11 @@ function VendorReview() {
       .post("https://csci-4177-grp-21.onrender.com/addReview", newReview)
       .then((response) => {
         console.log(response.data);
+        alert("Review Added Successfully!");
       })
       .catch((error) => {
         console.error(error);
+        alert("There was some error, Please try again.");
       });
   };
 
