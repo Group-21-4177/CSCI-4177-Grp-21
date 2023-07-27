@@ -1,3 +1,7 @@
+/**
+ * Created & Developed by Raunak Singh, B00831843
+ */
+
 import Rating from "@mui/material/Rating";
 import React, { useState, useEffect } from "react";
 import axios from "axios";

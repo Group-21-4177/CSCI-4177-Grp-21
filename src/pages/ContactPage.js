@@ -1,3 +1,7 @@
+/**
+ * Created & Developed by Raunak Singh, B00831843
+ */
+
 import React from "react";
 import "./css/ContactPage.css";
 import mailIcon from "./icons/mail_icon_512.png";

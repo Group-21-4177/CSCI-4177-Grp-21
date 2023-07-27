@@ -1,3 +1,7 @@
+/**
+ * Co-Developed by Raunak Singh, B00831843
+ */
+
 import React from "react";
 import "./NavBar.css";
 import WheelIcon from "./steering-wheel-512.gif";

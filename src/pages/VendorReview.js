@@ -1,3 +1,7 @@
+/**
+ * Created & Developed by Raunak Singh, B00831843
+ */
+
 import carWashImage1 from "./images/carwash1-unsplash.jpeg";
 import "./css/VendorReview.css";
 import Rating from "@mui/material/Rating";
