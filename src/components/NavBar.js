@@ -7,7 +7,7 @@ export default class NavBar extends React.Component {
     return (
       <nav className="nav-bar">
         <div className="logo">
-          <img src={WheelIcon} className="nav-bar-icon" alt="auto care logo" />
+          <a href="/"><img src={WheelIcon} className="nav-bar-icon" alt="auto care logo" /></a>
         </div>
         <div className="menu-options">
           <ul>
@@ -15,6 +15,8 @@ export default class NavBar extends React.Component {
             <a href="/profile"><li>Profile</li></a>
             <a href="/faq"><li>FAQ</li></a>
             <a href="/contact"><li>Contact Us</li></a>
+            <a href="/register"><li>Register</li></a>
+            <a href="/login"><li>Login</li></a>
           </ul>
         </div>
       </nav>
