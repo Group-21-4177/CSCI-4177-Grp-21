@@ -43,7 +43,7 @@ app.get('/user', (req, res) => {
 });
 
 
-// API Endpoints for Vendor Review Tables
+// API Endpoints for Vendor Review Table
 
 app.get('/review', (req, res) => {
   const vendor_id = req.query.id;
